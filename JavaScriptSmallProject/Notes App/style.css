@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(50deg, #e688f0, #ee9999);
+}
+.container{
+    margin: 8%;
+}
+.container h1{
+    color: #fff;
+}
+.container img{
+    background: transparent;
+}
+.container button{
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    background: #a05eef;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.Note{
+    margin: 10%;
+}
+.Note input{
+    background: #fff;
+    border: none;
+    outline: 0;
+    padding: 60PX 150PX;
+    font-size: 16px;
+    text-align: left;
+    border-radius: 10px;
+
+}
