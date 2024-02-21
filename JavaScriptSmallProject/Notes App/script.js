@@ -3,10 +3,10 @@ const createNotes = document.querySelector("#createNotes"); //The # symbol is us
 let notes = document.querySelectorAll(".input-box");
 
 function showNotes(){
-    notesContainer.innerHTML = localStorage.getItem("Notes");
+    notesContainer.innerHTML = localStorage.getItem("notes");
 }
 
-showNotes()
+showNotes();
 
 
 function updateStorage(){
@@ -25,7 +25,7 @@ createNotes.addEventListener("click", ()=>{
 notesContainer.addEventListener("click", function(e){
     if(e.target.tagName === "IMG"){
         e.target.parentElement.remove();
-        updateStorage()
+        updateStorage();
     }
     else if(e.target.tagName === "P"){
         notes = document.querySelectorAll(".input-box");
@@ -34,5 +34,12 @@ notesContainer.addEventListener("click", function(e){
                 updateStorage();
             }
         })
+    }
+})
+
+document.addEventListener("keydown", event =>{
+    if(event.key === "Enter"){
+        document.execCommand("insertLineBreak");
+        event.preventDefault();
     }
 })
